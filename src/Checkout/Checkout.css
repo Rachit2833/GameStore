@@ -1,0 +1,220 @@
+input
+ html{
+    font-size: 10px;
+     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .container {
+
+    text-align: center;
+    background-color: #f8f9f5;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: height 0.5s ease; /* Transition for smooth animation */
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.25fr 1.25fr 1fr;
+    margin: 1rem;
+    padding: 1rem 4rem;
+   
+
+  }
+  .expanded {
+    height: 30rem; /* Adjust height as needed */
+  }
+  .gdr{
+    grid-column: span 3;
+    text-align: left;
+  }
+  .component-heading {
+
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: royalblue;
+  /* Set a fixed height for the heading */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: left;
+  padding:  2rem;
+
+}
+
+  
+  .id{
+    font-size: 2rem;
+    font-weight: 600;
+    color: royalblue;
+   
+  }
+  .btn-container{
+    margin: 0 4rem;
+    grid-column: 3;
+    font-size: 1.8rem;
+    border: 0;
+    height: 6rem;
+    background-color: #33b249;
+    color: white;
+    border-radius: 1rem;
+
+  }
+  .bold{
+    color: #33b249;
+  }
+  .number{
+    margin: 0 1rem;
+    color: royalblue;
+  }
+  
+  .add-main{
+
+   margin: 0 1rem;
+  }
+  .head{
+    padding: 2rem 4rem;
+    background-color: #f8f9f5;
+    border-radius: 2rem;
+  }
+ 
+  .add{
+    
+    font-size: 2.2rem;
+    margin: 2rem;
+
+    padding: 2rem;
+  }
+  label{
+    margin: 0 2rem;
+  }
+  .phone{
+    margin: 0 4rem;
+    font-size: 1.6rem;
+   color: royalblue;
+  }
+  
+
+.selector-button {
+  /* Add styles for your selector button */
+}
+
+.button {
+  /* Add styles for your buttons */
+}
+
+address{
+    font-size: 1.6rem;
+    color: gray;
+}
+.other{
+    padding: 0 4rem;
+   border-bottom: 1px solid black;
+}
+.saved-address{
+  background-color: #f8f9f5;
+}
+.payment{
+
+  padding: 2rem 4rem;
+}
+.interface{
+  
+}
+.money{
+  background-color: #f8f9f5;
+  margin: 2rem 0rem;
+  padding: 2rem;
+  border-bottom: 1px solid black;
+}
+.cashapp{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cashapp-btn{
+   padding: 2rem 4rem;
+   border: 0;
+   background-color: #33b249;
+   font-size: 2rem;
+   color: white;
+   border-radius: 2rem;
+}
+
+
+.card-form {
+    margin: 5rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+form{
+  font-size: 2rem;
+}
+input{
+
+}
+
+
+ input[type="text"] {
+
+    padding: 1rem;
+      border: 3px solid white;
+    border-radius: 5px;
+}
+
+.submit-btn {
+
+    padding: 2rem 4rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+      margin: 0 1rem;
+      font-size: 2rem;
+}
+.info{
+   display: flex;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.form label {
+    font-weight: bold;
+}
+
+.submit-btn-wrapper{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.tr-check{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width:55rem){
+  html{
+    font-size: 8px;
+  }
+}
+@media(max-width:45em){
+  html{
+    font-size: 6px;
+  }
+}
+@media(max-width:35em){
+  html{
+    font-size: 4px;
+  }
+}
+.disabled{
+  background-color: gray;
+}
+.disabled:hover{
+  background-color: gray;
+}

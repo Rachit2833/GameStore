@@ -1,0 +1,744 @@
+
+html{
+    font-size: 10px;
+}
+.Home-Button {
+    height: 5rem;
+    width: 25rem;
+    background-color: #FBB402;
+    border: 0px;
+    margin-right: 3.2rem;
+    border-radius: 15rem;
+}
+.logo-sml{
+    width: 5rem;
+  
+}
+.search {
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    right: 20.5rem;
+    position: absolute;
+    width: 50.25rem;
+    background: white;
+    height: 40rem;
+    z-index: 20;
+    top: 6.5rem;
+    padding: 2rem 0;
+
+}
+
+
+.Home-section-hero{
+    padding: 3.2rem 0;
+    background-color: #FFEED8;
+    
+}
+.Home-Button-Sec{
+    height: 5rem;
+    width: 25rem;
+    border: 0px;
+    margin-right: 3.2rem;
+    border-radius: 15rem;
+}
+.Home-Button-Sec:hover{
+    background-color: royalblue;
+    border: 2px solid white;
+
+}
+
+.Home-hero-wrapper{
+        margin: 0 auto;
+    max-width: 130rem;
+    /* background-color: cadetblue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4.2rem; 
+    padding: 0 2rem;   
+}
+.Home-hero-img{
+    position: relative;
+    top: -3rem;
+    width: 80%;
+    border-radius: 50%;
+    margin: 0 3rem;
+    padding-left: 5rem;
+
+
+}
+.Home-hero-heading{
+   margin-top: 3.2rem;
+    font-size: 5.2rem;
+   font-weight: 700; 
+   line-height: 1.2;
+   margin-bottom: 4.8rem;
+   color: #9258E2;
+  /* font-family: "Press Start 2P", system-ui; */
+}
+.Home-hero-description{
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 7.2rem;
+    color: #F37EAB;
+}
+.Home-customer-img{
+    margin-top: 2rem;
+  width: 5rem;
+  height:5rem;
+  border-radius: 50%;
+  margin-left: -1.5rem;
+  border: 3.5px solid white;
+}
+.Home-customer-div{
+    display: flex;
+}
+.Home-customer-text{
+    margin-top: 4rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: royalblue;
+}
+.Home-logo-img{
+    height: 6rem;
+    width: 6rem;
+    color: #F37EAB;
+}
+
+a{
+    text-decoration: none;
+} 
+.Home-container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.Home-How-It-Works-Heading{
+    font-size: 5.2rem;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: #9258E2;
+    
+}
+.Home-How-It-Works{
+    background-color: #f4eefc;
+    padding: 5.2rem;
+}
+.Home-How-It-Works-Description{
+    font-size: 2.5rem;
+    color: #F37EAB;
+    margin: 2rem 0;
+}
+.Home-numbers{
+    font-size: 15.2rem;
+   font-family: "Rubik", sans-serif;
+   color:#FF9843 ;
+   font-weight: 700;
+   
+}
+
+.Home-How-It-Works-Sub-Heading{
+    font-size: 5.2rem;
+    
+}
+.Home-text{
+    margin-top: 5rem;
+}
+.Home-wrapper{
+    display: grid;
+    max-width: 120rem;
+     grid-template-columns: repeat(2 ,1fr);
+
+     gap: 5.2rem;
+
+}
+.image{
+
+}
+.Home-step-img{
+   width: 100%;
+   padding: 3.2rem;
+   margin-top: 5rem;
+}
+.Home-para{
+    font-size: 2.2rem;
+    color: #F37EAB;
+}
+.Home-Logos{
+   display: flex;
+   justify-content: space-around;
+   padding: 2rem 0;
+}
+.Home-logo{
+    width: 8.2rem;
+}
+.Home-recommended{
+    background-color: #fee9b3;
+    padding-top: 4rem;
+}
+.Home-featured{
+    text-align: center;
+    background-color: #f3f6ff;
+    padding: 2rem;
+}
+.Home-Featured-Heading{
+   color: #9258E2;
+   font-size: 3.2rem;
+   font-weight: 800;
+}
+.Home-recommended-heading{
+    font-size: 4.2rem;
+    color: #FF9843;
+    margin-bottom: 4rem;
+   text-align: center;
+}
+.Home-games{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.2rem;
+    padding: 2rem;
+     
+}
+.Home-game-img{
+   width: 100%;
+ 
+}
+
+.Home-Details{
+  display: grid;
+  grid-template-rows: 1fr 0.25fr 0.75fr ;
+  gap: 3.2rem;
+
+  
+}
+.Home-release-Date{
+    font-size: 3rem;
+}
+.Home-date_heading{
+   font-size: 2rem;
+}
+
+
+.Home-game-name{
+  font-size: 3.2rem;
+}
+.Home-Game-Details{
+   font-size: 2.2rem;
+}
+.Home-buy-heading{
+    font-size: 2.2rem;
+}
+.Home-price-Amount{
+    font-size: 4.2rem;
+   
+}
+.Home-console{
+    width: 100%;
+}
+.Home-rating-img{
+    width: 50%;
+    margin-left: 8rem;
+    position:relative;
+    top: -5rem;
+}
+.Home-Description-Game{
+    margin: 0;
+
+    
+}
+.Home-checkout{  
+    display: flex;
+    justify-content: space-between;
+   }
+.Home-others{
+    display: flex;
+
+}
+.Home-total{
+    font-size: 3.2rem;
+    margin-top: 1rem;
+}
+.Home-checkout-btn{
+ 
+    height: 5rem;
+    width: 50%;
+
+    font-size: 3.2rem;
+    color: white;
+    border: 0;
+    border-radius: 2rem;
+    background-color: #9258E2;
+}
+
+.Home-btns{
+    display: flex;
+    margin-top: 6rem;
+}
+.Home-checkout-cart{
+    margin-left: 2rem;
+    height: 5rem;
+    width: 50%;
+    font-size: 3.2rem;
+    color: white;
+    border: 0;
+    border-radius: 2rem;
+    background-color: #FF9843;
+}
+.Home-input{
+    height: 4rem;
+    width: 4rem;
+    font-size: 2.2rem;
+    color: #9258E2;
+    text-align: center;
+   
+}
+.Home-units{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 1rem;
+}
+.Home-abc{
+    font-size: 2.2rem;
+}
+.Home-testimonials{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background-color:#f4eefc ;
+}
+.Home-testimonial-img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+
+}
+.Home-testimonial-text{
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+.Home-section-testimonial{
+    padding: 4rem;
+    background-color: #f4eefc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.Home-testimonial-name{
+    font-size: 2.2rem;
+    font-family: Helvetica, sans-serif;
+}
+
+.Home-review-img{
+width: 100%;
+height: 90%;
+
+}
+.Home-gallery{
+  padding:  2rem ;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat();
+   gap: 0.5rem ;
+   background-color: #EEF5FF;
+   overflow: auto;
+  max-height: 50rem;
+}
+.Home-Customer-Rewiews{
+    font-size: 4.2rem;
+    padding: 2rem 4rem ;
+      background-color:#f4eefc ;
+      color: #9258E2;
+      text-align: center;
+}
+.Home-icon{
+ font-size: 5rem;
+
+}
+.Home-features{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 4rem;
+    text-align: center;
+    color: #9258E2;
+    background-color: #EEF5FF;
+}
+.Home-feature{
+    margin: 2rem;
+    padding-bottom: 2rem;
+}
+.Home-feature-heading{
+     font-size: 3.2rem;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #FF9843;
+}
+.Home-feature-des{
+    font-size: 1.8rem;
+    color: #F37EAB;
+}
+.Home-feature-top{
+    font-size: 4.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    background-color: #EEF5FF;
+      color: #9258E2;
+      padding: 2rem;
+}
+.Home-main-footer{
+    margin-top: 2rem;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+}
+
+.Home-footer-logo{
+    width: 50%;
+}
+.Home-foot-logo{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.Home-social-icon{
+    margin-top: -2rem;
+    width: 3rem;
+    height: 3rem;
+    color: #9258E2;
+}
+.header-sec-newNav {
+    background-color:  #FFEED8;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr; /* Adjusted grid-template-columns */
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 0.5rem;
+}
+.search-section{
+    width: 100%;
+   
+}
+.store-logo-newNav{
+    font-size: 2rem;
+    color: royalblue;
+}
+.small-log-newNav{
+    width: 5rem; 
+}
+.intro-newNav{
+   display: flex;
+}
+.newNav ul{
+      display: flex;
+    align-items: center;
+    gap: 10.2rem;
+    margin: 0 2rem;
+    list-style-type: none;
+}
+.newNav li{
+    font-size: 1.8rem;
+}
+.icon-newNav{
+    font-size: 2rem;
+
+}
+.account-info-newNav{
+    display: flex;
+
+     padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-section{
+
+}
+
+.circle {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: #9258E2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+   
+    }
+  .gray-border{
+    border: 2px solid gray;
+  }
+.Home-social{
+     text-align: center;
+}
+.Home-copywrite{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+.Home-copywrite-main{
+    text-align: center;
+   font-size: 3rem;
+   color: lightblue;
+}
+.Home-Txt{
+    font-size: 2rem;
+    font-weight: 800;
+     
+}
+.b{
+    color: red;
+}
+.a{
+    color: royalblue;
+}
+.st{
+    color: red;
+}
+
+.Home-point {
+    font-size: 2rem;
+    margin: 4rem 0; /* Adjusted margin for better spacing */
+}
+
+/* Add this style to make anchor links appear vertically */
+.Home-footer a {
+    display: block;
+}
+
+ .nav-wrap{
+    
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  height: 60px;
+  width: 60px; /* added width to make sure it's not too large */
+  position: fixed; /* changed from absolute to fixed */
+  top: 50%; /* adjust vertically */
+  left: 50%; /* adjust horizontally */
+  transform: translate(-50%, -50%); /* centering trick */
+  z-index: 9999; /* set a high z-index to ensure it appears above all content */
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+  z-index: 9998; /* Set lower than loader z-index */
+
+}
+
+.loader {
+  height: 60px;
+  width: 60px; /* added width to make sure it's not too large */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  transform-origin: bottom;
+}
+
+.loader::after {
+  background: radial-gradient(at 75% 15%,#fffb,#0000 35%),
+    radial-gradient(at 80% 40%,#0000,#0008),
+    radial-gradient(circle  5px,#fff 94%,#0000),
+    radial-gradient(circle 10px,#000 94%,#0000),
+    linear-gradient(#F93318 0 0) top   /100% calc(50% - 5px),
+    linear-gradient(#fff    0 0) bottom/100% calc(50% - 5px)
+    #000;
+  background-repeat: no-repeat;
+  animation: l20 1s infinite cubic-bezier(0.5,120,0.5,-120);
+}
+
+.loader::before {
+  background: #ddd;
+  filter: blur(8px);
+  transform: scaleY(0.4) translate(-13px, 0px);
+}
+
+@keyframes l20 {
+ 
+  30%,70% {
+    transform: rotate(0deg)
+  }
+
+  49.99% {
+    transform: rotate(0.2deg)
+  }
+
+  50% {
+    transform: rotate(-0.2deg)
+  }
+}
+
+.wraper-profile{
+    width: 45rem;
+   padding-bottom: 2rem ;
+
+    border: 1px solid black;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    margin:  2rem;
+    border-radius: 15px;
+    font-weight: 800;
+    background-color:  #ffffff;
+}
+.name-profile{
+    font-size: 2.2rem;
+}
+.gmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-bottom: 1px solid gray;
+}
+.buttons{
+    margin:  2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+.profile-btn{
+    width: 100%;
+   font-size: 2.2rem;
+   padding: 1rem 3rem;
+   margin: 0.1rem ;
+   color: royalblue;
+   display: flex;
+        align-items: center; 
+}
+.profile-img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+ .buttons ion-icon {
+
+        margin-right: 1rem; /* Adjust as needed */
+    }
+.left-Button{
+  border-bottom-left-radius:4rem;
+  border-top-left-radius: 4rem;
+
+}
+.rignt-Button{
+      border-bottom-right-radius:4rem;
+  border-top-right-radius: 4rem;
+}
+.profile-sec{
+    text-align: center;
+}
+
+
+.icon-profile{
+    font-size: 2rem;
+    text-align: center;
+}
+.mail-profile{
+    text-align: center;
+}
+.Account-button{
+     font-size: 2rem;
+    padding: 1rem;
+     color: royalblue;
+    border-radius: 4rem;
+    background-color: transparent;
+}
+.Account-button:hover{
+    background-color: aliceblue;
+
+}
+.profile-btn:hover{
+  background-color: aliceblue;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+
+   margin:  0 2rem ;
+}
+
+.foot p{
+   font-size: 1frem;
+   margin: 0.5rem;
+}
+li{
+    cursor: pointer;
+}
+.icon-newNav,.circle{
+    cursor: pointer;
+}
+.popUp{
+    max-height:35rem ;
+     background-color:  #ffffff;
+    width: 35rem;
+      padding:1rem  ;
+
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    margin:  2rem;
+    border-radius: 15px;
+    font-weight: 800;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    overflow: auto;
+}
+.row{
+       display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+
+margin: 0.5rem 0;
+    color: gray;
+    padding: 1rem 2rem;
+}
+.row:hover{
+ background-color: #f0f0f0;
+}
+.three{
+    width: 20rem;
+     background-color: #ffffff;
+      position: absolute;
+    right: 16.5rem;
+    padding: 1rem ;
+    border-radius: 15px;
+    color: gray;
+    z-index: 10;
+}
+.three-row{
+    font-size: 1.6rem;
+
+    padding: 0.75rem 0rem;
+
+}
+.three-row:hover{
+   background-color: #f0f0f0;
+}
+
+.search-div{
+ display: grid;
+        grid-template-columns: auto 1fr; /* Image and Text take the columns */
+        grid-gap: 10px; /* Gap between elements */
+        border: 1px solid #ccc;
+        padding: 10px;
+        align-items: center; 
+}

@@ -1,0 +1,157 @@
+
+.image_div{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 2rem;
+     background-color: white;
+     border-radius: 25px  ;
+     padding: 4rem;
+     min-height:50rem ;
+
+}
+.image{
+
+    height: 100%;
+}
+.hero_intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero_intro_head{
+    font-size: 2.6rem;
+}
+.Border{
+  
+
+}
+.arc{
+   background-image: url("/images/050645f9efabc06487aa1cb76369c35b.jpg");
+    border-radius: 25px;
+    padding: 4rem;
+    border: 2px solid white;
+}
+.head_div{
+   
+      font-weight: 800;
+     width: 70%;
+     text-align: center;
+   font-size: 3rem;
+    
+}
+.intro{
+    margin: 8rem 0;
+   display: flex;
+align-items: center;
+   flex-direction: column;
+}
+.des_div{
+    width: 70%;
+    text-align: center;
+    font-size: 2.2rem;
+}
+.impact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 6rem 0;
+  
+}
+.ipc{
+  padding: 2rem;
+}
+.impact_head{
+    text-align: center;
+    padding: 2rem 0;
+    font-weight: 700;
+}
+.impact_des{
+text-align: center;
+    font-size: 1.6rem;
+}
+.img{
+ max-height: 20rem;
+  height: 100%;
+  width: 100%;
+}
+.Initiatives{
+    display: grid;
+      grid-template-rows: 1fr 1fr; /* Two rows, each with auto height */
+      grid-template-columns: repeat(2, 1fr); /* Two columns in the first row */
+padding: 4rem 8rem;
+
+}
+.grid_item2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+   
+}
+.grid_item2 ,.grid_item{
+    padding:  1rem;
+    gap: 2rem;
+     max-height: 40rem;
+    
+    
+}
+.img_in{
+    height: 40rem;
+
+}
+.img_in:hover{
+    filter: brightness(130%);
+}
+.imageContainer {
+    position: relative;
+    width: 100%;
+}
+
+.pop_up {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #33b249;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: auto;  
+    filter: grayscale(100%);
+
+
+    box-sizing: border-box; 
+}
+
+.pop_up:hover {
+    filter: grayscale(0%);
+}
+
+.name {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none; /* Initial text decoration */
+    transition: text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.name:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.list{
+    
+    font-size: 1.6rem;
+    gap: 1rem;
+    list-style: none;
+}
+.listItem{
+    padding: 1rem;
+    text-align: center;
+    color: royalblue;
+}
+.awards{
+    padding: 4rem;
+}
+
+
+
+

@@ -1,0 +1,15 @@
+/* StyledModal.module.css */
+.styledModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: aliceblue;
+  border-radius: 10px ;
+  box-shadow: gray;
+  padding: 3.2rem 4rem;
+  transition: all 0.5s;
+  min-width: 50%;
+  z-index: 10;
+}
+

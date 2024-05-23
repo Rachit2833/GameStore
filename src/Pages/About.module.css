@@ -1,0 +1,102 @@
+
+.main_div{
+    background-image: url("public/images/wp8917513-dualshock-wallpapers.jpg");
+    min-height: 60rem;
+background-size: cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.head_comp{
+    font-size: 8.2rem;
+   text-align: center;
+    color: lavender;
+
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; 
+    
+ 
+}
+.info{
+    background-color: rgb(192, 81, 244);
+    padding: 2rem;
+
+}
+.head_sec a{
+    color: black;
+    font-size: 2.2rem;
+    
+}
+.head_sec{
+    text-align: center;
+}
+.head_div{
+   
+
+     width: 70%;
+     text-align: center;
+   font-size: 3rem;
+    
+}
+.intro{
+    margin: 8rem 0;
+   display: flex;
+align-items: center;
+   flex-direction: column;
+}
+.des_div{
+    width: 80%;
+    text-align: center;
+    font-size: 2.2rem;
+}
+.video_grid{
+    display: grid;
+    grid-template-columns: 0.5fr 0.4fr 0.1fr;
+  min-height: 40rem;
+    
+    padding: 4rem;
+    width: 90%;
+    background-color: #e1ccfd;
+
+}
+.video{
+    width: 100%;
+    min-height: 40rem;
+
+}
+.para{
+    font-size: 2.2rem;
+
+
+}
+.icon_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+     
+}
+.des_part{
+
+        margin-left: 2rem;
+         
+   
+}
+.work_img{
+    padding: 2rem;
+}
+.work_button{
+    padding: 1.5rem 4rem;
+    font-size: 2.2rem;
+    border-radius: 25px;
+    background-color:  #33b249;
+    color: white;
+    border: 0;
+}
+.about_testimonial{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 6rem;
+
+}

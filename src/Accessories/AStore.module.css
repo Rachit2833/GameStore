@@ -1,0 +1,74 @@
+.banner {
+    background-image: url("public/images/Logitech_G102_Gaming_Mouse-From_TPS_Tech-Main_Banner.webp");
+    background-position: center;
+    background-size: cover;
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main_conatiner{
+   display: grid;
+   min-height: 70rem;
+   grid-template-rows: 0.55fr 0.45fr;
+   gap: 1rem;
+
+}
+.grid2{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+   background-size: cover;
+   
+}
+.banner1{
+   background-image: url("public/images/Logitech_G102_Gaming_Mouse-From_TPS_Tech-01_Banner.webp");
+   background-size: cover;
+   background-position: center;
+}
+.banner2{
+     background-image: url("public/images/Logitech_G102_Gaming_Mouse-From_TPS_Tech-_04_Banner.webp");
+     background-size: cover;
+     background-position: left;
+
+}
+.head_banner{
+   color:  white;
+   margin: 2rem 4rem;
+   font-size: 2.2rem;
+
+    font-weight: 800;
+   
+}
+.banner_button{
+
+   padding: 1rem 2rem;
+   border-radius: 15px;
+   font-size: 2rem;
+   font-weight: 600;
+   border: 0;
+   background-color: #04A5E5;
+   color: white;
+}
+.banner_button:hover{
+
+   color: white;
+}
+.btn {
+  position: absolute;
+  z-index: 7;
+  bottom: -4%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+     background-color: #04A5E5;
+     font-size: 2rem;
+     color: white;
+}
+.btn:hover{
+
+}

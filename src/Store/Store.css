@@ -1,0 +1,211 @@
+
+.Store-main-Content {
+    margin: 4rem;
+    padding: 5rem;
+    min-width: 120rem;
+}
+
+.Store-banner {
+    background-image: url("images/images (5).jpeg");
+    height: 100%;
+    text-align: center;
+    padding: 4rem;
+    border-radius: 4rem;
+}
+
+.Store-sub-head {
+    font-size: 2rem;
+}
+
+.Store-main-head {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.Store-banner-images {
+    margin-top: 6rem;
+    height: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.Store-banner-button {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    border-radius: 4rem;
+    background-color: transparent;
+}
+
+.Store-ctl-btn {
+    border: 0;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: 2.2rem;
+}
+
+.Store-banner-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Store-slide-numbers {
+    font-size: 2.2rem;
+}
+
+.Store-sec-head {
+    margin: 4rem 0;
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+
+.Store-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.Store-category {
+    color: gray;
+    font-size: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.Store-cat-name {
+    font-weight: 200;
+}
+
+.Store-icon {
+    font-size: 2.6rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.Store-odd {
+
+    color: white;
+}
+
+.Store-even {
+
+    color: white;
+}
+.Store-category:nth-child(odd):hover{
+    background-color: rgb(145, 247, 145);
+
+}
+
+.Store-category:nth-child(odd) {
+    background-color: #b1f3b1;
+}
+
+.Store-category:nth-child(even) {
+    background-color: lightblue;
+}
+.Store-category:nth-child(even):hover{
+    background-color: rgb(122, 165, 246);
+}
+
+.Store-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.Store-anchor {
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.Store-games-rec {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    width: 100%;
+    gap: 2rem;
+}
+
+.Store-game {
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+.Store-game-img {
+ height: 30rem;
+    width: 100%;
+}
+
+.Store-game-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.c-d{
+ display: flex;
+ justify-content: space-between;
+}
+.Store-game-des {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.Store-banner2 {
+    text-align: left;
+    background-image: url("images/1000_F_284322178_4gxGLWFFujUQpE7p31xMLDt916vayMgs.jpg");
+    margin: 4rem 0;
+}
+
+.Store-head-b2 {
+    font-size: 4.2rem;
+}
+
+.Store-banner3 {
+    background-image: url("images/050645f9efabc06487aa1cb76369c35b.jpg");
+    color: red;
+    text-align: left;
+    margin: 4rem 0;
+}
+.Store-game
+
+.Store-banner4 {
+    background-image: url("images/mighty-and-sleek-playstation-5-gaming-console-2zgbtlj334hdsh0g.jpg");
+    background-size: cover;
+    color: white;
+    margin: 4rem 0;
+}
+.Store-banner4 button{
+    background-color: white;
+}
+
+.Store-bbtn4 {
+    color: white;
+}
+
+.Store-bbtn4:hover {
+    color: royalblue;
+}
+
+.Store-banner-button:hover {
+    background-color: aliceblue;
+}
+.Store-banner5{
+    background-image: url("public/images/razer-blackshark-v2-hyperspeed-battery-life-desktop.webp");
+    background-position: center;
+    background-size: cover;
+    min-height: 30rem;
+    color: white;
+    margin: 4rem 0;
+}
+.Store-banner5 button{
+    background-color:#C2E0F9;
+    border: 0;
+}

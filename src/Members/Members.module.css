@@ -1,0 +1,246 @@
+
+
+
+body{
+    position: relative;
+}
+.img_div {
+ text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50rem;
+  width: 100%;
+  background-size: cover;
+  border-radius: 25px;
+  background-image: url("public/images/wallpaperflare.com_wallpaper (2).jpg");
+  position: relative; /* Add position relative to create a stacking context */
+}
+
+.head {
+  margin: 0;
+  font-size: 3.2rem;
+
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; 
+  color: white;
+}
+
+.para {
+  font-size: 2.2rem;
+  padding: 0 4rem;
+  font-weight: 900;
+  -webkit-text-stroke-width: 1px;
+  font-weight: 600;
+  -webkit-text-stroke-color: black; 
+  color: white;
+}
+.Button{
+    font-size: 2.2rem;
+    width: 15%;
+    padding: 1rem ;
+    border-radius: 15px ;
+    border: 0;
+}
+.Button:hover{
+   background-color: whitesmoke;
+
+}
+.benifits_div{
+    padding: 4rem;
+    background-color: #EEF5FF;
+    margin: 2rem 0;
+    
+}
+.benifits{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.6rem;
+    gap: 1rem;
+    list-style: none;
+}
+.listItem{
+    padding: 1rem;
+    text-align: center;
+    color: royalblue;
+}
+.head_comp{
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 2rem;
+    color: royalblue;
+}
+.discount,.discount_inner{
+    background-color: #fee9b3;
+    min-height: 50rem;
+    border-radius: 25px;
+padding: 2rem;
+}
+.discount_inner ,.white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    flex-direction: column;
+        border-radius: 25px;
+}
+.discount_head{
+    font-size: 2.2rem;
+    margin: 0;
+}
+.discount_dis{
+    font-size: 3.2rem;
+}
+.howItWorks_wrapper{
+ background-color: #EEF5FF;
+    min-height: 50rem;
+    border-radius: 25px;
+    margin: 4rem 0;
+    padding: 2rem;
+
+}
+.HIW_Top{
+
+color: royalblue;   
+ display: flex;
+
+  flex-direction: column ;
+  align-items: center;
+}
+.HIW_head,.plus_head{
+    color: royalblue;   
+     font-size: 3.2rem;
+     padding: 4rem;
+     margin: 0;
+}
+.HIW_des{
+    color: royalblue;   
+ margin: 0;
+ font-size: 1.6rem;
+ width: 40rem;
+ text-align: center;
+}
+.HIW_Card{
+   margin: -10rem 0;
+    text-align: center;
+
+}
+.HIW_Card_Wrapper{
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.HIW_icon{
+    color: gray;   
+    font-size: 20rem;
+}
+.HIW_Card_head{
+    color: gray;   
+    margin: -20rem 0;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+.HIW_Card_des{
+    color: gray;   
+    margin: 20rem 0; 
+    font-size: 1.6rem;
+    padding:  0 4rem;
+}
+.plus_div{
+    color: red;
+    background-color: #EEF5FF;
+  display: flex;
+align-items: center;
+flex-direction: column;
+  margin: 0;
+  min-height: 50rem;
+  text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+       
+
+}
+.plus_des{
+    color: red;
+font-size: 1.6rem;
+}
+.plus_head{
+    color: red;
+padding: 0;
+margin: 2rem ;
+
+}
+.plus_Top{
+    color: red;
+    grid-column: -1/1;
+}
+.Normal_benifit{
+list-style: none;
+    font-size: 1.6rem;
+
+}
+.normal{
+    position: relative;
+    top: -10rem;
+      
+}
+.container {
+    width: 50rem;
+    position: fixed;
+    top:60%;
+    z-index: 10;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-height: 20rem;
+   
+}
+
+.form_member{
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.form.hidden {
+    transform: translateY(-100%);
+}
+
+.abc {
+    width: 95%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.xyz{
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.head_Form{
+    font-size: 2.2rem;
+}
+.button_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.Close{
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    padding: 1.5rem;
+    
+
+}

@@ -1,0 +1,46 @@
+.container {
+   background-color: aliceblue;
+   padding: 2rem;
+   position: relative; /* Added position relative to container */
+  
+}
+
+.wrapper {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   text-align: center;
+}
+
+.dot {
+   width: 4rem;
+   background-color:#27aa80;
+   height: 4rem;
+   border-radius: 50%;
+   z-index: 4;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2.2rem;
+   color: white;
+}
+
+.tracking {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative; /* Added position relative to .tracking */
+}
+
+.tracking::before {
+	content: '';
+	display: block;
+	height: 3px;
+	width: calc(100% - 4rem);
+	background-color: #f7be16;
+	top: 2rem;
+	position: absolute;
+	left: calc(-50% + 20px);
+	z-index: 0;
+}
+.tracking:first-child:before{display: none;}
+.tracking:last-child:before{background-color: #27aa80;}

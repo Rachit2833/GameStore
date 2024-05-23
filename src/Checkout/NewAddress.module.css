@@ -1,0 +1,60 @@
+.form_page {
+   background-color: whitesmoke;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2rem;
+}
+
+.head_form {
+   padding: 2rem;
+   font-size: 2.2rem;
+   font-weight: 700;
+   width: 100%;
+   background-color: whitesmoke;
+}
+
+.addForm {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2rem;
+   padding: 2rem;
+}
+
+.org {
+   border-left: 1px solid black;
+   margin: 2rem 0;
+   padding: 0 2rem;
+   max-height: 40rem;
+   overflow: auto;
+}
+.delbutton:hover{
+ background-color: transparent;
+
+}
+
+textarea {
+   grid-column:  span 2; /* Span both columns */
+   width: 100%; /* Make the textarea take 100% width */
+   padding: 1rem;
+   box-sizing: border-box;
+}
+
+.button_Div {
+    grid-column: span 2; 
+
+    text-align: right;
+}
+
+.button {
+   height: 4rem;
+   padding: 0 4rem;
+   margin: 1rem;
+   font-size: 2rem;
+   color: white;
+   border: 0;
+}
+address{
+   margin: 2rem 0;
+   border-bottom: 1px solid black;
+}
