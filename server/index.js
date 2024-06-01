@@ -2,12 +2,13 @@ import express from "express";
 import Razorpay from "razorpay";
 import cors from "cors";
 import crypto from "crypto";
-
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3328;
-const razorpayKeySecret = "npuW0dSa2bU4YKMNLnX5UxS0";
-
+const port = process.env.PORT 
+const razorpayKeySecret = process.env.key_secret;
+const key_id = process.env.key_id;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
@@ -27,7 +28,7 @@ function objectToForm(object) {
   return form;
 }
 const razorpay = new Razorpay({
-  key_id: "rzp_test_qX1EsMper3NA3e",
+  key_id: key_id,
   key_secret: razorpayKeySecret,
 });
 
