@@ -22,10 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-Supabase.js
-supabase.js
 ../../Desktop/
 ../../Documents/
 ../../Downloads/
 sw.js
 .env
+server/.env
+Supabase.js
