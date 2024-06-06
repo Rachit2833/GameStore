@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 function PopUp() {
     const navigate =useNavigate()
     return (
-        <div className="popUp">
+        <div className="popUp" style={{ zIndex: "100" }}>
             <div className="row">
                 <span> Track Your Order</span>
                 <ion-icon name="map-outline"></ion-icon>

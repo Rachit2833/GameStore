@@ -49,7 +49,7 @@ function GamesContext({ children }) {
        
     })
    
-    const { data: userData = [], isLoadingUserData } = useQuery({
+    const { data: userData =[], isLoadingUserData } = useQuery({
         queryFn: () => {
             const val = localStorage.getItem('CustomerId');
             if (val) {

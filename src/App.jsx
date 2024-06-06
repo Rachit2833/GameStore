@@ -166,12 +166,14 @@ function App() {
             <Route
               path="/list"
               element={
-                <ProtectedRoute>
+              
                   <PrivateRoute>
+          
                     <List />
+                
                   </PrivateRoute>
                   
-                </ProtectedRoute>
+                
               }
             />
             <Route

@@ -33,9 +33,9 @@ function Profile() {
     });
 
     return (
-        <div className="wraper-profile">
+        <div className="wraper-profile" style={{ zIndex: "100" }}>
             <div className="gmail">
-                <h2 className="mail-profile">{userData[0]?.EmailAddress}</h2>
+                <h2 className="mail-profile">{userData[0]?.EmailAddress} ,<span style={{color:"royalBlue"}}>{userData[0]?.Role}</span></h2>
             </div>
             <div className="profile-sec">
                 <img className="profile-img" src={userData[0]?.ImageURL} alt="" />

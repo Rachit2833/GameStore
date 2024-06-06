@@ -44,11 +44,11 @@ function List() {
          </div>
          <div className="abc">
             <div className="modal">
-               <form className="form" onSubmit={handleSubmit(onSubmit)}>
-                  <div className="credit-card-info--form">
-                     <div className="input_container">
+               <form  className="form" onSubmit={handleSubmit(onSubmit)}>
+                  <div  className="credit-card-info--form">
+                     <div  className="input_container">
                         <label htmlFor="name_field" className="input_label">Name</label>
-                        <input {...register("Name")} id="name_field" className="input_field" type="text" placeholder="Enter the product name" />
+                        <input   {...register("Name")} id="name_field" className="input_field" type="text" placeholder="Enter the product name" />
                      </div>
                      <div className="input_container">
                         <label htmlFor="studio_field" className="input_label">Studio</label>
