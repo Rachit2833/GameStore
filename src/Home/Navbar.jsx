@@ -11,7 +11,7 @@ function Navbar() {
     const [searchParams, setSearchParams] = useSearchParams();
     const navigate =useNavigate()
     const games = useGames()
-    const {  forUser,  setProductData, onHover,}=games
+    const { forUser, setProductData, onHover, customerId }=games
     const [isProfileOpen, setIsProfileOpen] = useState(false)
     const [isOptionOpen, setIsOptionOpen] = useState(false)
     const [isThreeDotOpen, setIsThreeDotOpen] = useState(false)
@@ -79,13 +79,13 @@ function Navbar() {
                     setIsProfileOpen(false)
                         setIsThreeDotOpen(false)
                 }}><ion-icon name="grid-outline" /></span>
-                <div class="circle gray-border" onClick={()=>{
+               {customerId? <div class="circle gray-border" onClick={()=>{
                     setIsProfileOpen(!isProfileOpen)
                         setIsThreeDotOpen(false)
                         setIsOptionOpen(false)
                 }} >
                     <span>A</span>
-                </div>
+                </div>:null}
              </div>
             
         </header>

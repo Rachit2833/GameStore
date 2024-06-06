@@ -16,11 +16,11 @@ function Work() {
                         <p class="Home-para">Explore our extensive collection of games by genre, platform, or featured categories. Find your perfect game and add it to your cart.</p>
                     </div>
                     <div class="Home-image">
-                        <img class="Home-step-img" src="public/images/jpeg-optimizer_felipe-vieira-vAulBEZf9Nc-unsplash.jpg" alt=""></img>
+                        <img class="Home-step-img" src="/images/jpeg-optimizer_felipe-vieira-vAulBEZf9Nc-unsplash.jpg" alt=""></img>
                     </div>
 
                     <div class="Home-image i1">
-                        <img class="Home-step-img" src="public/images/jpeg-optimizer_rupixen-com-Q59HmzK38eQ-unsplash.jpg" alt=""></img>
+                        <img class="Home-step-img" src="/images/jpeg-optimizer_rupixen-com-Q59HmzK38eQ-unsplash.jpg" alt=""></img>
                     </div>
                     <div class="Home-text">
                         <span class="Home-numbers">02</span>
@@ -34,7 +34,7 @@ function Work() {
                             Receive your game key instantly via email or get a physical disk delivered in 2 days.</p>
                     </div>
                     <div class="Home-image i3">
-                        <img class="Home-step-img" src="public/images/jpeg-optimizer_stephen-phillips-hostreviews-co-uk-3Mhgvrk4tjM-unsplash.jpg" alt=""></img>
+                        <img class="Home-step-img" src="/images/jpeg-optimizer_stephen-phillips-hostreviews-co-uk-3Mhgvrk4tjM-unsplash.jpg" alt=""></img>
                     </div>
                 </div>
             </div>

@@ -30,7 +30,7 @@ function Checkout() {
                 <Slide Number={1} Data={"Account"} id={true} />
                 <AddressSection />
                
-                <Slide Number={"3"} Data={"Order Summary"} id={false} extended={
+                <Slide  Name="Open" Number={"3"} Data={"Order Summary"} id={false} extended={
                 <div class="gdr" style={{padding:"4rem"}}>
                 <div class="total">
                     <table>
@@ -54,7 +54,7 @@ function Checkout() {
                 </div>
                 </div>
                 }/>
-                <Slide Number={"4"} Data={"Payment"} id={false}  />
+                <Slide  Name="Pay" Number={"4"} Data={"Payment"} id={false}  />
             </div>
             <div className="foot-wrap">
                 <Footer />

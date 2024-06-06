@@ -1,18 +1,21 @@
 import useOrders from "../Function/useOrders";
 import easyinvoice from "easyinvoice";
 import fs from "fs"
- 
 
 
-var apikey =
+
+
+const apikey =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNxandib21zdnRoZm1sYnhkZndoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgwNzk4OTgsImV4cCI6MjAyMzY1NTg5OH0.beR2H7hLUZzEchCH9uK5dTk6_f6TFHRIXJYO-4cvcvc";
-var supabaseUrl = "https://cqjwbomsvthfmlbxdfwh.supabase.co";
+const supabaseUrl = "https://cqjwbomsvthfmlbxdfwh.supabase.co";
 const Tracking = JSON.stringify({
   details: "Some information here",
-  date: "2024-03-26",
-})
+  date: new Date("2024-03-26"),
+});
 
-export async function makePayment(Fndata) {
+
+export async function makePayment(Fndata, CustomerID) {
+
   try {
     console.log(Fndata.Total);
     console.log(Fndata.Address);
@@ -23,7 +26,7 @@ export async function makePayment(Fndata) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        amount: parseInt(1 * 100),
+        amount: parseInt(Fndata.Total * 100),
         currency: "INR",
         receipt: "qwsaq87",
       }),
@@ -54,7 +57,7 @@ export async function makePayment(Fndata) {
           if (validateRes.ok) {
             try {
               const responseCart = await fetch(
-                `${supabaseUrl}/rest/v1/Cart?apikey=${apikey}`,
+                `${supabaseUrl}/rest/v1/Cart?apikey=${apikey}&CustomerID=eq.${CustomerID}`,
                 {
                   method: "GET",
                   headers: {
@@ -66,23 +69,23 @@ export async function makePayment(Fndata) {
               console.log("Cart data:", cartData);
 
               const orderPromises = cartData.map(async (data) => {
-                const orderData =  {
-     
-        "CustomerID": data.CustomerID,
-        "ProductId": data.ProductID,
-        "AmountPaid": Fndata.Total,
-        "Status": "Ordered",
+                const orderData = {
+                  "CustomerID": data.CustomerID,
+                  "ProductId": data.ProductID,
+                  "AmountPaid": Fndata.Total,
+                  "Status": "Ordered",
+                  "OrderId": body.razorpay_order_id,
+                  "Address": Fndata.Address,
+                  "Quantity": parseInt(data.Quantity),
+                  "   PaymentId": body.razorpay_payment_id,
+                  "Tracking":[Tracking]
+                };
 
-        "OrderId": body.razorpay_order_id,
-        "Address": Fndata.Address,
-        "Quantity": parseInt(data.Quantity),
-"   PaymentId": body.razorpay_payment_id,
-       
-    }
- console.log(orderData,"hbhjn jknj");
+                console.log(orderData, "hbhjn jknj");
                 try {
                   const orderResponse = await fetch(
                     `${supabaseUrl}/rest/v1/Orders?apikey=${apikey}`,
+
                     {
                       method: "POST",
                       headers: {
@@ -93,27 +96,8 @@ export async function makePayment(Fndata) {
                   );
 
                   if (orderResponse.ok) {
-
-
-
-            
-          
-                    
-
-
-                  
-
-
-
-
-
-
-
-
-
-
                     console.log("Order placed successfully:", orderData);
-                    return orderResponse 
+                    return orderResponse;
                   } else {
                     console.error(
                       "Failed to place order:",

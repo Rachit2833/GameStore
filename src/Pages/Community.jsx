@@ -20,7 +20,7 @@ function Community() {
                                 In community, we understand the weight of our responsibility, weaving together the fabric of support and empathy.
                             </h2>
                         </div>
-                        <img className={styles.image} src="public/images/19198057.jpg" alt="" />
+                        <img className={styles.image} src="/images/19198057.jpg" alt="" />
                     </div>
                 </div>
                 <div className={styles.intro}>
@@ -36,22 +36,22 @@ function Community() {
                     </p>
                     <div className={styles.impact}>
                         <div className={styles.ipc}>
-                            <img className={styles.img} src="public/images/413144-PDTI0Y-350.jpg" alt="" />
+                            <img className={styles.img} src="/images/413144-PDTI0Y-350.jpg" alt="" />
                             <h2 className={styles.impact_head}>Education and Empowerment: </h2>
                             <p className={styles.impact_des}>We believe in the transformative power of education. We're committed to providing resources and opportunities that empower individuals, particularly those from underprivileged backgrounds, to unlock their full potential. From scholarships and mentorship programs to initiatives promoting digital literacy and STEM education, we strive to create pathways for success and personal growth.</p>
                         </div>
                         <div className={styles.ipc}>
-                            <img className={styles.img} src="public/images/clay-banks-LjqARJaJotc-unsplash.jpg" alt="" />
+                            <img className={styles.img} src="/images/clay-banks-LjqARJaJotc-unsplash.jpg" alt="" />
                             <h2 className={styles.impact_head}>Diversity and Inclusion </h2>
                             <p className={styles.impact_des}>In gaming and beyond, diversity is our strength. We're dedicated to fostering inclusive environments where everyone feels valued, respected, and empowered to contribute. Through partnerships with organizations promoting diversity in tech and gaming, as well as internal initiatives focused on diversity training and recruitment, we're working to create a more inclusive industry and society.</p>
                         </div>
                         <div className={styles.ipc}>
-                            <img className={styles.img} src="public/images/noah-buscher-x8ZStukS2PM-unsplash.jpg" alt="" />
+                            <img className={styles.img} src="/images/noah-buscher-x8ZStukS2PM-unsplash.jpg" alt="" />
                             <h2 className={styles.impact_head}>Environmental Sustainability:</h2>
                             <p className={styles.impact_des}>As stewards of the planet, we recognize the importance of protecting the environment for future generations. We're committed to reducing our environmental footprint through sustainable practices across our operations, from packaging and shipping to energy consumption and waste management. Additionally, we support environmental conservation efforts through partnerships with organizations dedicated to preserving biodiversity and combating climate change.</p>
                         </div>
                         <div className={styles.ipc}>
-                            <img className={styles.img} src="public/images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg" alt="" />
+                            <img className={styles.img} src="/images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg" alt="" />
                             <h2 className={styles.impact_head}>Community & Well-being: </h2>
                             <p className={styles.impact_des}>Strong communities are the foundation of a thriving society. We're dedicated to supporting the well-being of the communities where we operate, both online and offline. Through volunteer initiatives, charitable donations, and partnerships with local organizations, we're working to address pressing social issues, promote mental health and wellness, and build stronger, more resilient communities for all.</p>
                         </div>

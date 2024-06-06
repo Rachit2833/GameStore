@@ -5,7 +5,7 @@ import { makePayment } from "../Services/makePayment";
 import { useGames } from "../Context/GameContext";
 import useOrders from "../Function/useOrders";
 
-function Slide({ Number, Data, id, extended }) {
+function Slide({ Number, Data, id, extended, Name  }) {
     const games = useGames();
     const {
         selectedAddressData,
@@ -15,16 +15,17 @@ function Slide({ Number, Data, id, extended }) {
         setTotalAmt,
         deliveryAmt,
         setDeliveryAmt,
+        customerId
     } = games;
     const addData={
-        "Total":totalAmt,
+        "Total": totalAmt + deliveryAmt,
         "Address":selectedAddressData
     }
     const [extendButton, setExtendButton] = useState(true);
 
     const { mutate: paymentMutate, isLoading } = useMutation({
         mutationFn: async () => {
-         await makePayment(addData);
+            await makePayment(addData, customerId);
         },
         onSuccess: (data) => {
             console.log("success", data);
@@ -48,14 +49,14 @@ function Slide({ Number, Data, id, extended }) {
             </h2>
             {id ? <span class="id">rachitrawat123@gmail.com</span> : null}
 
-            <button
+            {Name ?<button
                 class="btn-container"
                 onClick={() => {
                     Data === "Payment" ? handlePayment() : setExtendButton(!extendButton);
                 }}
-            >
-                {Data === "Payment" ? "Pay" : "Change"}
-            </button>
+            >{!extendButton ||Name==="Pay" ?Name:"Close"}
+            
+            </button>:null}
 
             {extendButton ? extended : null}
         </div>

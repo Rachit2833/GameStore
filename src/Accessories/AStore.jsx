@@ -56,7 +56,7 @@ function AStore() {
               })}
 
             </div>
-            <SecondaryBanner align={"center"} color={"white"} image={"public/images/razer-blackshark-v2-hyperspeed-battery-life-desktop.webp"} data={bannerData1} handelClick={()=>scrollDownAndUp(1800)}/>
+            <SecondaryBanner align={"center"} color={"white"} image={"/images/razer-blackshark-v2-hyperspeed-battery-life-desktop.webp"} data={bannerData1} handelClick={()=>scrollDownAndUp(1800)}/>
             <Heading heading={" Latest RAZER BLACKSHARK V2 HYPERSPEED"} />
 
             <div style={{ position: "relative", display: "flex", justifyContent: "center", boxSizing: "border-box", }} class="Store-games-rec">

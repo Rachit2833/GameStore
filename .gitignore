@@ -28,3 +28,4 @@ supabase.js
 ../../Documents/
 ../../Downloads/
 sw.js
+.env

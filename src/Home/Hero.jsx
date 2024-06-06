@@ -18,12 +18,12 @@ function Hero() {
                             navigate("/signup")
                         }} >JoinUS</button>
                     <div class="Home-customer-div">
-                        <img class="Home-customer-img" src="public/images/jpeg-optimizer_sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" alt=""></img>
-                        <img class="Home-customer-img" src="public/images/jpeg-optimizer_christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt=""></img>
-                        <img class="Home-customer-img" src="public/images/jpeg-optimizer_marek-pospisil-PLZb71hLKWk-unsplash.jpg" alt=""></img>
-                        <img class="Home-customer-img" src="public/images/jpeg-optimizer_ospan-ali-6xv4A1VA1rU-unsplash.jpg" alt=""></img>
-                                        <img class="Home-customer-img" src="public/images/jpeg-optimizer_sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" alt=""></img>
-                        <img class="Home-customer-img" src="public/images/jpeg-optimizer_sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" alt=""></img>
+                        <img class="Home-customer-img" src="/images/jpeg-optimizer_sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" alt=""></img>
+                        <img class="Home-customer-img" src="/images/jpeg-optimizer_christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt=""></img>
+                        <img class="Home-customer-img" src="/images/jpeg-optimizer_marek-pospisil-PLZb71hLKWk-unsplash.jpg" alt=""></img>
+                        <img class="Home-customer-img" src="/images/jpeg-optimizer_ospan-ali-6xv4A1VA1rU-unsplash.jpg" alt=""></img>
+                                        <img class="Home-customer-img" src="/images/jpeg-optimizer_sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" alt=""></img>
+                        <img class="Home-customer-img" src="/images/jpeg-optimizer_sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" alt=""></img>
                                                 <h2 class="Home-customer-text">Trusted By Over A Million User</h2>
                                             </div>
                                         </div>

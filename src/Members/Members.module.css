@@ -14,7 +14,7 @@ body{
   width: 100%;
   background-size: cover;
   border-radius: 25px;
-  background-image: url("public/images/wallpaperflare.com_wallpaper (2).jpg");
+  background-image: url("/images/wallpaperflare.com_wallpaper (2).jpg");
   position: relative; /* Add position relative to create a stacking context */
 }
 

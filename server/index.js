@@ -3,30 +3,18 @@ import Razorpay from "razorpay";
 import cors from "cors";
 import crypto from "crypto";
 import dotenv from "dotenv";
-dotenv.config();
 
+dotenv.config();
 const app = express();
-const port = process.env.PORT 
-const razorpayKeySecret = process.env.key_secret;
-const key_id = process.env.key_id;
+const port = process.env.PORT || 3328;
+
+const razorpayKeySecret = process.env.RAZORPAY_KEY_SECRET;
+const key_id = process.env.KEY_ID;
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
-function objectToForm(object) {
-  const form = document.createElement("form");
 
-  for (const key in object) {
-    if (object.hasOwnProperty(key)) {
-      const input = document.createElement("input");
-      input.setAttribute("type", "hidden"); // Assuming all values are to be hidden
-      input.setAttribute("name", key);
-      input.setAttribute("value", object[key]);
-      form.appendChild(input);
-    }
-  }
-
-  return form;
-}
 const razorpay = new Razorpay({
   key_id: key_id,
   key_secret: razorpayKeySecret,
@@ -48,7 +36,8 @@ app.post("/order", async (req, res) => {
 
 app.post("/validate", async (req, res) => {
   try {
-    const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =req.body;
+    const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =
+      req.body;
     const text = `${razorpay_order_id}|${razorpay_payment_id}`;
     const expectedSignature = crypto
       .createHmac("sha256", razorpayKeySecret)
@@ -68,29 +57,6 @@ app.post("/validate", async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
-// app.post("/mail", async function (req, res) {
-//   const { Name, From, Phone, Message } = req.body;
-//   console.log(Name, From, Phone, Message);
-//  const tempParams={
-//   from_name:Name,
-//   from_email:From,
-//   to_name:"GameStore",
-//   message:Message
-
-//  }
-//  const form =objectToForm(tempParams)
-//   try {
-//     await emailjs.sendForm("service_zeaj4dm", "template_zf8vqt8", <h1>Hello world</h1>, {
-//       publicKey: "user_aOInDpF-_EcA_GfIH",
-//     });
-//     console.log("SUCCESS!");
-//     res.status(200).json({ message: "Email sent successfully" });
-//   } catch (error) {
-//     console.log("FAILED...", error);
-   
-//   }
-// });
-
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

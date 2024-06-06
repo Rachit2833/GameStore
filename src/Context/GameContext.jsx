@@ -8,7 +8,7 @@ import { getOrders } from "../Services/getOrders";
 import { getUserData } from "../Services/getUserData";
 import { getAccessories } from "../Services/getAccessories";
 import { getBannerStoreData } from "../Services/getBannerDataStore";
-import { getUser } from "../Services/getUser";
+import { getSession } from "../Services/getUser";
 
 
 const Games = createContext();
@@ -44,23 +44,25 @@ function GamesContext({ children }) {
     });
 
     const { data:session, isLoading:isSession } = useQuery({
-        queryFn: getUser,
+        queryFn: getSession,
        queryKey: ["Session"]
        
     })
    
     const { data: userData = [], isLoadingUserData } = useQuery({
-        queryFn: (customerId)=>{ 
-            if (localStorage.getItem('CustomerId')) {
-       
-                 return getUserData(val)
+        queryFn: () => {
+            const val = localStorage.getItem('CustomerId');
+            if (val) {
+                return getUserData(val);
+            } else if (customerId) {
+                return getUserData(customerId);
             } else {
-                return getUserData(customerId)
+                return 
             }
-        }        
-        ,
-        queryKey: ["UserData"]
+        },
+        queryKey: ["UserData", customerId]
     });
+
 
 
     const { data: Consoles= [], isLoading:isConsoleLoading } = useQuery({

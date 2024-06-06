@@ -1,30 +1,22 @@
-import { useQuery } from "react-query"
-import { useEffect } from "react"
-import { useNavigate } from "react-router"
-import { getUser } from "../Services/getUser"
-import { useGames } from "../Context/GameContext"
-import toast from "react-hot-toast"
-
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useGames } from "../Context/GameContext";
+import toast from "react-hot-toast";
 
 function ProtectedRoutes({ children }) {
+   const navigate = useNavigate();
+   const games = useGames();
+   const { session, isSession } = games;
+   const isAuthenticated = session?.role === "authenticated";
 
-   const navigate = useNavigate()
-   const games=useGames()
-   const { session, isSession, } =games
-   
-   
-   let isAuthenticated = session?.role === "authenticated"
+   useEffect(() => {
+      if (!isAuthenticated ) {
+         navigate("/login");
+      }
+   }, [isAuthenticated, navigate]);
 
- 
-
-
-   if (!isAuthenticated && !isSession) {
-
-      navigate("/login")
-   }
-   if (isAuthenticated) {
-      return children
-   }
+   // Render the children only if authenticated
+   return isAuthenticated ? children : null;
 }
 
-export default ProtectedRoutes
+export default ProtectedRoutes;

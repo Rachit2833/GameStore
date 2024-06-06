@@ -1,6 +1,6 @@
 
 .main_div{
-    background-image: url("public/images/wp8917513-dualshock-wallpapers.jpg");
+    background-image: url("/images/wp8917513-dualshock-wallpapers.jpg");
     min-height: 60rem;
 background-size: cover;
  display: flex;

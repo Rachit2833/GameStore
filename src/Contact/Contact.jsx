@@ -49,7 +49,7 @@ function Contact() {
          
       <div style={{ backgroundColor:"#f4eefc"}} className={styles.container}>
          <span className={styles['big-circle']}></span>
-         <img src="public/images/shape.png" className={styles.square} alt="" />
+         <img src="/images/shape.png" className={styles.square} alt="" />
          <div className={styles.form}>
             <div className={styles['contact-info']}>
                <h3 className={styles.title}>Let's get in touch</h3>
@@ -60,15 +60,15 @@ function Contact() {
 
                <div className={styles.info}>
                   <div className={styles.information}>
-                     <img src="public/images/location.png" className={styles.icon} alt="" />
+                     <img src="/images/location.png" className={styles.icon} alt="" />
                      <p>92 Cherry Drive Uniondale, NY 11553</p>
                   </div>
                   <div className={styles.information}>
-                     <img src="public/images/email.png" className={styles.icon} alt="" />
+                     <img src="/images/email.png" className={styles.icon} alt="" />
                      <p>lorem@ipsum.com</p>
                   </div>
                   <div className={styles.information}>
-                     <img src="public/images/phone.png" className={styles.icon} alt="" />
+                     <img src="/images/phone.png" className={styles.icon} alt="" />
                      <p>123-456-789</p>
                   </div>
                </div>

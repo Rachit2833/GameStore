@@ -11,12 +11,14 @@ function Login() {
    const games = useGames()
    const { customerId, setCustomerId, session, isSession, } = games
 
-  useEffect(()=>{
+
      let isAuthenticated = session?.role === "authenticated"
-     if (isAuthenticated) {
-       navigate("/store")
-     }
-  },[])
+     useEffect(()=>{
+        if (isAuthenticated) {
+           navigate("/store")
+        }
+     },[navigate,isAuthenticated,session])
+  
 
 
 
@@ -31,9 +33,10 @@ function Login() {
    const { mutate, isLoading } = useMutation({
       mutationFn: (data) => useLogin(data),
       onSuccess: (response) => {
+         queryClient.invalidateQueries(["Session"]);
+         
          setCustomerId(response.user.identities[0].user_id)
          localStorage.setItem('CustomerId', response.user.identities[0].user_id);
-         queryClient.invalidateQueries(["Session"]);
          navigate("/store");
          toast.success("Login success");
       },
